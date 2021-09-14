@@ -1,0 +1,35 @@
+{
+  "name": "test-automation-benchmark-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run ./wdio.conf.js",
+    "authentication": "npx wdio run wdio.conf.js --suite authentication",
+    "addToCart": "npx wdio run wdio.conf.js --suite addToCart",
+    "checkout": "npx wdio run wdio.conf.js --suite checkout"
+  },
+  "author": "Andrew Lawrence",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.12.5",
+    "chromedriver": "^93.0.1",
+    "dotenv": "^10.0.0",
+    "webdriverio": "^7.12.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/register": "^7.15.3",
+    "@wdio/local-runner": "^7.12.5",
+    "@wdio/mocha-framework": "^7.12.5",
+    "@wdio/selenium-standalone-service": "^7.12.5",
+    "@wdio/spec-reporter": "^7.12.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-install": "2.1.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-screenshots": "^1.7.3"
+  }
+}
