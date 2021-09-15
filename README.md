@@ -17,7 +17,7 @@
 `npm run checkout`
 
 ### Change the environment
-change environment to dev or prod in `.env` file__
+change environment to dev or prod in `.env` file \
 .env was used because the test was setup on my Windows machine and only .env would work
 
 ### Create Reports
