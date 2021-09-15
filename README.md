@@ -17,11 +17,14 @@
 `npm run checkout`
 
 ### Change the environment
-change environment to deb or prod in `.env` file 
-.env was used because the test was setup on a Windows machine and only .env would work
+change environment to dev or prod in `.env` file 
+.env was used because the test was setup on my Windows machine and only .env would work
 
 ### Create Reports
 `npx marge  ./report/{result_json_file_name}`
+
+### Babel config
+babel was used to setup the .env file so that it would be a project-wide configuration, and to make the test run smoother.
 
 
 
