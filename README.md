@@ -1,7 +1,6 @@
 # automation-repo
 
 
-
 ## Initialize project
 `npm install`
 
