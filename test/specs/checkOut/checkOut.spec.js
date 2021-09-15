@@ -2,7 +2,7 @@ import HomePage from  '../../pageObjects/home.page';
 import ProductDetailPage from '../../pageObjects/productDetails.page';
 import CartPage from '../../pageObjects/cart.page';
 import NavigationBar from '../../pageObjects/navigationBar.page';
-import UserDetails from '../../pageObjects/userDetailsModel.pages';
+import UserDetails from '../../pageObjects/userDetailsModel.page';
 import BillingData from '../../../data/billing.data';
 import LoginPage from '../../pageObjects/login.page';
 import Users from '../../../data/users.data';

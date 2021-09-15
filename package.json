@@ -7,14 +7,16 @@
     "test": "npx wdio run ./wdio.conf.js",
     "authentication": "npx wdio run wdio.conf.js --suite authentication",
     "addToCart": "npx wdio run wdio.conf.js --suite addToCart",
-    "checkout": "npx wdio run wdio.conf.js --suite checkout"
-  },
+    "checkOut": "npx wdio run wdio.conf.js --suite checkOut"
+   },
+  
   "author": "Andrew Lawrence",
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^7.12.5",
     "chromedriver": "^93.0.1",
     "dotenv": "^10.0.0",
+    "mochawesome-report-generator": "^2.3.2",
     "webdriverio": "^7.12.5"
   },
   "devDependencies": {
@@ -30,6 +32,7 @@
     "babel-core": "^6.26.3",
     "babel-install": "2.1.0",
     "mochawesome": "^6.2.2",
-    "mochawesome-screenshots": "^1.7.3"
+    "mochawesome-screenshots": "^1.7.3",
+    "wdio-mochawesome-reporter": "^4.0.0"
   }
 }

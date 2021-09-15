@@ -41,8 +41,8 @@ exports.config = {
         authentication: [
             './test/specs/authentication/*.js'
         ],
-        checkout: [
-            './test/specs/checkout/*.js'
+        checkOut: [
+            './test/specs/checkOut/*.js'
         ],
     },
     // Patterns to exclude.
@@ -156,10 +156,19 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',['mochawesome',{
+        outputDir: './report',
+        outputFileFormat: function(opts) { 
+            return `results-${opts.cid}.json`
+        }
+      }]],
+
+      mochawesomeOpts: {
+        includeScreenshots:true,
+        screenshotUseRelativePath:true
+    },
 
 
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -291,6 +300,10 @@ exports.config = {
      */
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
+    onComplete: function (exitCode, config, capabilities, results) {
+        const mergeResults = require('wdio-mochawesome-reporter/mergeResults')
+        mergeResults('./report', "results-*")
+      }
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session
