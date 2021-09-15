@@ -18,6 +18,7 @@
 
 ### Change the environment
 change environment to deb or prod in `.env` file 
+.env was used because the test was setup on a Windows machine and only .env would work
 
 ### Create Reports
 `npx marge  ./report/{result_json_file_name}`
